@@ -4,7 +4,56 @@
     --primaryFont: "Plus Jakarta Sans", sans-serif;
     --secondaryFont: "Inter", sans-serif;
 
+    --primaryColor: #cc3b02;
+    --paraColor: #6c6c6c;
+
 }
 
 .font-pri{font-family: var(--primaryFont)!important;}
 .font-sec{font-family: var(--secondaryFont)!important;}
+.color-pri{color: var(--primaryColor)!important;}
+.bg-pri{background-color: var(--primaryColor)!important;}
+.border-pri{border-color: var(--primaryColor)!important;}
+.color-para{color: var(--paraColor)!important;}
+.bg-para{background-color: var(--paraColor)!important;}
+.border-para{border-color: var(--paraColor)!important;}
+.wrapper{max-width: 1600px!important; margin: auto!important;}
+
+.hoverPrimary {
+    transition: all 0.3s ease-in-out;
+}
+
+.hoverPrimary:hover {
+    color: var(--primaryColor) !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.primaryBtn {
+    position: relative;
+    overflow: hidden;
+}
+
+.primaryBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: 1;
+    background-color: #000;
+    transition: width 0.4s ease-in-out;
+}
+
+.primaryBtn:hover::before {
+    width: 100%;
+}
+
+.btnText {
+    position: relative;
+    z-index: 2;
+}

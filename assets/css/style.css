@@ -5,6 +5,7 @@
     --secondaryFont: "Inter", sans-serif;
 
     --primaryColor: #cc3b02;
+    --bgTwo: #FAFBFF;
     --paraColor: #6c6c6c;
 
 }
@@ -13,11 +14,15 @@
 .font-sec{font-family: var(--secondaryFont)!important;}
 .color-pri{color: var(--primaryColor)!important;}
 .bg-pri{background-color: var(--primaryColor)!important;}
+.bgTwo{background-color: var(--bgTwo)!important;}
 .border-pri{border-color: var(--primaryColor)!important;}
 .color-para{color: var(--paraColor)!important;}
 .bg-para{background-color: var(--paraColor)!important;}
 .border-para{border-color: var(--paraColor)!important;}
 .wrapper{max-width: 1600px!important; margin: auto!important;}
+.maxWidth750{max-width: 750px!important}
+.maxWidth1000{max-width: 1000px!important;}
+p{line-height: 1.75!important;}
 
 .hoverPrimary {
     transition: all 0.3s ease-in-out;
@@ -35,6 +40,12 @@
 .primaryBtn {
     position: relative;
     overflow: hidden;
+    padding: 12px 24px !important;
+    font-family: var(--primaryFont) !important;
+    font-size: 1rem;
+    border-radius: 100rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
 }
 
 .primaryBtn::before {
@@ -56,4 +67,45 @@
 .btnText {
     position: relative;
     z-index: 2;
+}
+
+.heroSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.heroSectionImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.heroRightSecImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.badgeCircle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primaryColor);
+    border-radius: 100%;
 }

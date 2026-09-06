@@ -19,7 +19,7 @@
 .color-para{color: var(--paraColor)!important;}
 .bg-para{background-color: var(--paraColor)!important;}
 .border-para{border-color: var(--paraColor)!important;}
-.wrapper{max-width: 1600px!important; margin: auto!important;}
+.wrapper{max-width: 1440px!important; margin: auto!important;}
 .maxWidth750{max-width: 750px!important}
 .maxWidth1000{max-width: 1000px!important;}
 p{line-height: 1.75!important;}

@@ -24,12 +24,16 @@
 .maxWidth1000{max-width: 1000px!important;}
 p{line-height: 1.75!important;}
 
-.hoverPrimary {
-    transition: all 0.3s ease-in-out;
+.hoverPrimary, .hoverBlack {
+    transition: color 0.3s ease-in-out;
 }
 
 .hoverPrimary:hover {
     color: var(--primaryColor) !important;
+}
+
+.hoverBlack:hover {
+    color: #000 !important;
 }
 
 .navbar-toggler {
@@ -108,4 +112,56 @@ p{line-height: 1.75!important;}
     height: 10px;
     background-color: var(--primaryColor);
     border-radius: 100%;
+}
+
+.serviceBox {
+    position: relative;
+    min-height: 550px;
+    overflow: hidden;
+    border-radius: 16px;
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.serviceBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.serviceBoxBgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.serviceBox:hover .serviceBoxBgImg {
+    transform: scale(1.1)
+}
+
+.serviceBoxServiceIcon {
+    transition: transform 0.4s ease-in-out, background 0.4s ease-in-out;
+    position: relative;
+    z-index: 3;
+}
+
+.serviceBoxServiceIcon:hover {
+    transform: rotate(45deg);
+    background-color: #000 !important;
 }

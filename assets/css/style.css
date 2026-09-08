@@ -168,6 +168,7 @@ p{line-height: 1.75!important;}
 
 .secFourBox {
     height: 100%;
+    min-height: 400px;
     position: relative;
     display: flex;
     flex-direction: column;

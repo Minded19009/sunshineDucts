@@ -217,3 +217,52 @@ p{line-height: 1.75!important;}
 .secFourBox:hover .secFourBoxImg {
     transform: scale(1.1);
 }
+
+.homeAnimationBoxes {
+    position: relative;
+    overflow: hidden;
+}
+
+.boxesNumber, .boxesHeading, .boxesPara {
+    transition: color 0.4s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.homeAnimationBoxes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--primaryColor);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.homeAnimationBoxes:hover .boxesNumber, .homeAnimationBoxes:hover .boxesHeading, .homeAnimationBoxes:hover .boxesPara {
+    color: #fff !important;
+}
+
+.homeAnimationBoxes:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+
+.pricingLabel {
+    cursor: pointer;
+    text-align: center;
+    color: var(--primaryColor);
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    padding: 12px 18px;
+    border-radius: 12px;
+    transition: color 0.4s ease-in-out, background 0.4s ease-in-out;
+}
+
+.activeLabel {
+    background-color: var(--primaryColor) !important;
+    color: #fff !important;
+}

@@ -33,3 +33,16 @@ const secFiveSwiper = new Swiper('.secFiveSwiper', {
         delay: 3000,
     }
 })
+
+// Home Pricing Section JS:
+const pricingLabel = document.querySelectorAll('.pricingLabel');
+
+pricingLabel.forEach((label) => {
+    label.addEventListener('click', () => {
+        pricingLabel.forEach((label) => {
+            label.classList.remove('activeLabel');
+        })
+
+        label.classList.add('activeLabel');
+    })
+})

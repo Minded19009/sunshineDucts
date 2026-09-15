@@ -266,3 +266,68 @@ p{line-height: 1.75!important;}
     background-color: var(--primaryColor) !important;
     color: #fff !important;
 }
+
+.yearlyPlan {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    background: #1A1A1A;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    transition: 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--primaryColor);
+}
+
+.swiper-button-prev {
+    left: auto !important;
+    right: 100px !important;
+    top: auto !important;
+    bottom: 0px !important;
+}
+
+.swiper-button-next {
+    right: 20px !important;
+    top: auto !important;
+    bottom: 0px !important;
+}
+
+.secondaryBtn {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    font-family: var(--primaryFont);
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 16px 24px;
+    border-radius: 100px;
+    line-height: 1;
+}
+
+@media (max-width: 576px) {
+    .container-lg {
+        padding: 8px !important;
+    }
+
+    .pricingPlan {
+        padding: 0px;
+    }
+}

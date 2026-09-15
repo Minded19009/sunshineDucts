@@ -36,6 +36,8 @@ const secFiveSwiper = new Swiper('.secFiveSwiper', {
 
 // Home Pricing Section JS:
 const pricingLabel = document.querySelectorAll('.pricingLabel');
+const monthlyPlan = document.querySelectorAll('.monthlyPlan');
+const yearlyPlan = document.querySelectorAll('.yearlyPlan');
 
 pricingLabel.forEach((label) => {
     label.addEventListener('click', () => {
@@ -44,5 +46,42 @@ pricingLabel.forEach((label) => {
         })
 
         label.classList.add('activeLabel');
+        const labelName = label.innerText;
+
+        if (labelName === 'Monthly') {
+            monthlyPlan.forEach((plan) => {
+                plan.style.display = "block";
+            })
+
+            yearlyPlan.forEach((plan) => {
+                plan.style.display = "none";
+            })
+        }
+
+        if (labelName === 'Yearly') {
+            yearlyPlan.forEach((plan) => {
+                plan.style.display = 'block';
+            })
+
+            monthlyPlan.forEach((plan) => {
+                plan.style.display = "none";
+            })
+        }
     })
+})
+
+// Testimonials Swiper:
+const testimonialsSwiper = new Swiper('.testimonialsSwiper', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 48,
+    speed: 2000,
+    autoplay: {
+        delay: 3000,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
 })

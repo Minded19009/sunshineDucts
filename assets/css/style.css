@@ -331,3 +331,11 @@ p{line-height: 1.75!important;}
         padding: 0px;
     }
 }
+
+.footerLinks {
+    transition: color 0.4s ease-in-out;
+}
+
+.footerLinks:hover {
+    color: var(--primaryColor) !important;
+}

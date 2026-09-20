@@ -84,4 +84,42 @@ const testimonialsSwiper = new Swiper('.testimonialsSwiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     }
+});
+
+// About Us Switch Boxes:
+const aboutUsBadge = document.querySelectorAll('.aboutUsBadge');
+const aboutUsBoxes = document.querySelectorAll('.aboutUsBoxes');
+
+aboutUsBadge.forEach((badge) => {
+    badge.addEventListener('click', () => {
+        aboutUsBadge.forEach((badge) => {
+            badge.classList.remove('bg-pri');
+            badge.classList.remove('text-white');
+        })
+
+        badge.classList.add('bg-pri');
+        badge.classList.add('text-white');
+        const badgeText = badge.innerText.toLowerCase();
+        console.log(badgeText);
+
+        aboutUsBoxes.forEach((box) => {
+            box.classList.remove('d-flex');
+            box.classList.add('d-none');
+
+            if (badgeText === 'our mission' && box.id === 'ourMissionBox') {
+                box.classList.remove('d-none');
+                box.classList.add('d-flex');
+            }
+            
+            if (badgeText === 'our vision' && box.id === 'ourVisionBox') {
+                box.classList.remove('d-none');
+                box.classList.add('d-flex');
+            }
+
+            if (badgeText === 'our value' && box.id === 'ourValueBox') {
+                box.classList.remove('d-none');
+                box.classList.add('d-flex');
+            }
+        })
+    } )
 })

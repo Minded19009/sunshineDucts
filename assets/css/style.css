@@ -5,7 +5,7 @@
     --secondaryFont: "Inter", sans-serif;
 
     --primaryColor: #cc3b02;
-    --bgTwo: #FAFBFF;
+    --bgTwo: #f3f3f3;
     --paraColor: #6c6c6c;
 
 }
@@ -22,7 +22,7 @@
 .wrapper{max-width: 1440px!important; margin: auto!important;}
 .maxWidth750{max-width: 750px!important}
 .maxWidth1000{max-width: 1000px!important;}
-p{line-height: 1.75!important;}
+p, span{line-height: 1.75!important; letter-spacing: -0.5px !important;}
 
 .hoverPrimary, .hoverBlack {
     transition: color 0.3s ease-in-out;
@@ -85,7 +85,7 @@ p{line-height: 1.75!important;}
     opacity: 0.8;
 }
 
-.heroSectionImg {
+.homeHeroSectionImg {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,7 +96,7 @@ p{line-height: 1.75!important;}
     z-index: 1;
 }
 
-.heroRightSecImg {
+.homeHeroRightSecImg {
     position: absolute;
     top: 0;
     right: 0;
@@ -338,4 +338,40 @@ p{line-height: 1.75!important;}
 
 .footerLinks:hover {
     color: var(--primaryColor) !important;
+}
+
+.aboutHero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+.aboutHeroBgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutUsBadge {
+    background-color: #000;
+    color: #fff;
+    font-family: var(--primaryFont);
+    text-align: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
 }

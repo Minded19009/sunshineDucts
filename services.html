@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sunshine Ducts</title>
+
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/png" href="/assets/content/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/content/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/content/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/content/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Sunshine" />
+    <link rel="manifest" href="/assets/content/favicon/site.webmanifest" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Lenis CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid bg-black py-1">
+            <div class="container-lg wrapper">
+                <div class="row py-2">
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start gap-4">
+                            <span class="d-inline-flex flex-row align-items-center justify-content-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path></svg>
+                                <a href="tel:+12345678900" class="hoverPrimary font-pri text-decoration-none text-white fw-semibold">(234) 567-8900</a>
+                            </span>
+                            <span class="d-inline-flex flex-row align-items-center justify-content-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path></svg>
+                                <a href="mailto:info@domainname.com" class="hoverPrimary font-pri text-decoration-none text-white fw-semibold">info@domainname.com</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="d-flex flex-row justify-content-end">
+                            <span class="px-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></span>
+                            <span class="px-2 border-start border-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg></span>
+                            <span class="px-2 border-start border-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,112c0,22.57-7.9,43.2-22.23,58.11C188.39,184,170.25,192,152,192c-17.88,0-29.82-5.86-37.43-12l-10.78,45.82A8,8,0,0,1,96,232a8.24,8.24,0,0,1-1.84-.21,8,8,0,0,1-6-9.62l32-136a8,8,0,0,1,15.58,3.66l-16.9,71.8C122,166,131.3,176,152,176c27.53,0,56-23.94,56-64A72,72,0,1,0,73.63,148a8,8,0,0,1-13.85,8A88,88,0,1,1,224,112Z"></path></svg></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-white py-3">
+            <div class="container-lg wrapper">
+                <nav class="navbar navbar-expand-lg">
+                    <a href="index.html" class="navbar-brand font-pri fw-bold fs-5 color-pri d-none d-sm-block"><img src="assets/content/logo/brandmark.svg" alt="Sunshine Ducts logo" height="50px" width="auto" class="me-3">Sunshine Ducts</a>
+                    <a href="index.html" class="navbar-brand font-pri fw-bold fs-5 color-pri d-block d-sm-none"><img src="assets/content/logo/brandmark.svg" alt="Sunshine Ducts logo" height="50px" width="auto" class="me-3"></a>
+
+                    <button class="navbar-toggler bg-pri" data-bs-toggle="collapse" data-bs-target="#headerMenu"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg></button>
+
+                    <div class="collapse navbar-collapse" id="headerMenu">
+                        <ul class="navbar-nav ms-auto gap-3">
+                            <li class="nav-item"><a href="index.html" class="hoverPrimary nav-link font-pri fw-semibold text-black">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="javascript:void(0)" class="hoverPrimary nav-link dropdown-toggle font-pri fw-semibold text-black text-black" role="button" data-bs-toggle="dropdown" aria-expanded="false">States</a>
+                                <ul class="dropdown-menu bg-pri p-0">
+                                    <li class="p-2"><a href="javascript:void(0)" class="dropdown-link font-pri fw-semibold text-white text-decoration-none fs-6">Ontario</a></li>
+                                    <li class="p-2"><a href="javascript:void(0)" class="dropdown-link font-pri fw-semibold text-white text-decoration-none fs-6">Alberta</a></li>
+                                    <li class="p-2"><a href="javascript:void(0)" class="dropdown-link font-pri fw-semibold text-white text-decoration-none fs-6">Saskatchewan</a></li>
+                                    <li class="p-2"><a href="javascript:void(0)" class="dropdown-link font-pri fw-semibold text-white text-decoration-none fs-6">Manitoba</a></li>
+                                    <li class="p-2"><a href="javascript:void(0)" class="dropdown-link font-pri fw-semibold text-white text-decoration-none fs-6">British Columbia</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="services.html" class="hoverPrimary nav-link font-pri fw-semibold color-pri">Services</a></li>
+                            
+                            <li class="nav-item"><a href="about.html" class="hoverPrimary nav-link font-pri fw-semibold text-black">About</a></li>
+                            <li class="nav-item"><a href="contact.html" class="hoverPrimary nav-link font-pri fw-semibold text-black">Contact</a></li>
+                        </ul>
+                        <a href="javascript:void(0)" class="d-none d-lg-block ms-auto font-pri bg-pri text-white primaryBtn"><span class="btnText">Free Estimate</span></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container-fluid py-5 position-relative aboutHero">
+            <img src="https://demo.awaikenthemes.com/coolify/demo3/wp-content/uploads/2025/07/page-header-bg.jpg" alt="" class="aboutHeroBgImg">
+            <div class="container-lg wrapper py-5 d-flex flex-column align-items-center align-items-lg-start justify-content-center gap-4 z-3 position-relative">
+                <h1 class="mb-0 font-pri text-white fw-bold display-4">Our Services</h1>
+                <p class="mb-0 text-white font-sec fw-medium"><a href="index.html" class="text-decoration-none text-white fs-6 fw-medium font-sec">Home</a> / <a href="services.html" class="text-decoration-none text-white fs-6 fw-medium font-sec">Services</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="secTwo">
+            <div class="container-fluid py-5 bgTwo">
+                <div class="container-lg wrapper py-4">
+                    <div class="d-none d-lg-flex row g-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="serviceBox">
+                                <img src="assets/content/img/sec-3-serviceBox-img-1.webp" alt="" class="serviceBoxBgImg">
+                                <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                    <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                    <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="serviceBox">
+                                <img src="assets/content/img/sec-3-serviceBox-img-2.webp" alt="" class="serviceBoxBgImg">
+                                <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                    <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                    <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="serviceBox">
+                                <img src="assets/content/img/sec-3-serviceBox-img-3.webp" alt="" class="serviceBoxBgImg">
+                                <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                    <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                    <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="serviceBox">
+                                <img src="assets/content/img/sec-3-serviceBox-img-4.webp" alt="" class="serviceBoxBgImg">
+                                <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                    <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                    <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="serviceBox">
+                                <img src="assets/content/img/sec-3-serviceBox-img-5.webp" alt="" class="serviceBoxBgImg">
+                                <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                    <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                    <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="serviceBox">
+                                <img src="assets/content/img/sec-3-serviceBox-img-6.webp" alt="" class="serviceBoxBgImg">
+                                <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                    <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                    <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none swiper secThreeSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="serviceBox">
+                                    <img src="assets/content/img/sec-3-serviceBox-img-1.webp" alt="" class="serviceBoxBgImg">
+                                    <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                    <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                        <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                        <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="serviceBox">
+                                    <img src="assets/content/img/sec-3-serviceBox-img-2.webp" alt="" class="serviceBoxBgImg">
+                                    <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                    <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                        <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                        <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="serviceBox">
+                                    <img src="assets/content/img/sec-3-serviceBox-img-3.webp" alt="" class="serviceBoxBgImg">
+                                    <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                    <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                        <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                        <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="serviceBox">
+                                    <img src="assets/content/img/sec-3-serviceBox-img-4.webp" alt="" class="serviceBoxBgImg">
+                                    <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                    <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                        <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                        <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="serviceBox">
+                                    <img src="assets/content/img/sec-3-serviceBox-img-5.webp" alt="" class="serviceBoxBgImg">
+                                    <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                    <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                        <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                        <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="serviceBox">
+                                    <img src="assets/content/img/sec-3-serviceBox-img-6.webp" alt="" class="serviceBoxBgImg">
+                                    <a href="services.html" class="p-2 bg-pri rounded-circle serviceBoxServiceIcon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a>
+                                    <div class="position-relative z-3 d-flex flex-column align-items-start justify-content-center w-100">
+                                        <h3 class="text-start font-pri text-white fw-bold fs-5">AC Installation & Replacement</h3>
+                                        <p class="mb-0 font-sec text-white text-start">Book your appointment online or by phone at a time that quickly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secThree">
+            <div class="container-fluid bg-black py-5">
+                <div class="container-lg wrapper py-4">
+                    <div class="row gy-5 align-items-center">
+                        <div class="col-12 col-lg-6 pe-lg-4">
+                            <img src="https://demo.awaikenthemes.com/coolify/demo3/wp-content/uploads/2025/07/company-skill-img.jpg" alt="" class="h-100 w-100 rounded-4">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-center">
+                                <div class="d-flex flex-row align-items-center justify-content-center gap-2 mb-2"><span class="badgeCircle"></span><span class="font-pri text-white fw-semibold fs-6 text-uppercase">About us</span></div>
+                                <h2 class="mb-3 font-pri text-white display-5 fw-bold text-capitalize text-center text-lg-start">Expertise in roofing craftsmanship guaranteed</h2>
+                                <p class="mb-5 font-sec text-white fs-6 text-center text-lg-start fw-medium">Get quick and reliable AC repair without breaking the bank. Our certified technicians diagnose and fix issues efficiently, ensuring your home stays cool and comfortable.</p>
+                                <div class="d-flex flex-row align-items-center justify-content-between w-100 mb-2">
+                                    <h3 class="font-pri text-white fw-medium fs-5">Technical Installation Mastery</h3>
+                                    <span class="font-pri text-white fw-medium fs-5">78%</span>
+                                </div>
+                                <span class="aboutLineFiller lineFillerOne mb-4"></span>
+
+                                <div class="d-flex flex-row align-items-center justify-content-between w-100 mb-2 mt-3">
+                                    <h3 class="font-pri text-white fw-medium fs-5">Advanced Diagnostics</h3>
+                                    <span class="font-pri text-white fw-medium fs-5">91%</span>
+                                </div>
+                                <span class="aboutLineFiller lineFillerTwo mb-4"></span>
+
+                                <div class="d-flex flex-row align-items-center justify-content-between w-100 mb-2 mt-3">
+                                    <h3 class="font-pri text-white fw-medium fs-5">Airflow Optimization</h3>
+                                    <span class="font-pri text-white fw-medium fs-5">86%</span>
+                                </div>
+                                <span class="aboutLineFiller lineFillerThree mb-5"></span>
+                                <a href="javascript:void(0)" class="font-pri bg-pri text-white primaryBtn"><span class="btnText">Contact Now</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secFour">
+            <div class="container-fluid py-5">
+                <div class="container-lg wrapper">
+                    <div class="row gy-5">
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-center">
+                                <div class="d-flex flex-row align-items-center justify-content-center gap-2 mb-2"><span class="badgeCircle"></span><span class="font-pri text-black fw-semibold fs-6 text-uppercase">What we do</span></div>
+                                <h2 class="mb-3 font-pri text-black display-5 fw-bold text-capitalize text-center text-lg-start">Step-by-step service for hassle-free cooling</h2>
+                                <p class="mb-4 font-sec lh-75 text-center text-lg-start">At Coolify, we believe in making your cooling experience simple and stress-free. Our team follows a clear, step-by-step process—from booking and inspection to installation and after-service care. Every stage is handled.</p>
+                                <img src="assets/content/img/sec-four-right-con-img-1.webp" alt="" width="100%" height="215px" style="object-fit: cover;" class="rounded-3">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-center ps-lg-5">
+                                <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-center pb-4 border-bottom border-1 border-secondary mb-4">
+                                    <h3 class="font-pri text-black fw-bold fs-5 mb-3 text-center text-lg-start"><span class="color-pri">01.</span> AC Repair & Troubleshooting</h3>
+                                    <p class="font-sec color-para mb-0 text-center text-lg-start">When your AC system isn’t performing as it should, our expert technicians are just a call away. We quickly diagnose the problem and provide reliable repairs for all major brands and models. Whether it's poor cooling, strange noises,</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-center pb-4 border-bottom border-1 border-secondary mb-4">
+                                    <h3 class="font-pri text-black fw-bold fs-5 mb-3 text-center text-lg-start"><span class="color-pri">02.</span> Maintenance & Servicing</h3>
+                                    <p class="font-sec color-para mb-0 text-center text-lg-start">Regular maintenance is key to keeping your AC system running efficiently and avoiding costly breakdowns. Our comprehensive servicing includes filter cleaning, gas checks, performance testing,</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-center">
+                                    <h3 class="font-pri text-black fw-bold fs-5 mb-3 text-center text-lg-start"><span class="color-pri">03.</span> Energy-Efficient Upgrades</h3>
+                                    <p class="font-sec color-para mb-0 text-center text-lg-start">Upgrade to smarter, greener cooling with our energy-efficient AC solutions. We replace outdated systems with modern, inverter-based or high-SEER units that consume less power while delivering superior performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secFive">
+            <div class="container-fluid bg-black py-5">
+                <div class="container-lg wrapper">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-12 col-lg-6 pe-lg-5">
+                            <img src="assets/content/img/home-sec-nine-left-img.webp" alt="" class="w-100 h-100 rounded-4">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex flex-column align-items-start justify-content-center mb-4">
+                                <div class="d-flex flex-row align-items-center justify-content-center gap-2 mb-2"><span class="badgeCircle"></span><span class="font-pri text-white fw-semibold fs-6 text-uppercase">Our testimonial</span></div>
+                                <h2 class="mb-3 font-pri text-white display-5 fw-bold text-capitalize text-start maxWidth750">Cooling experiences that is speak for themselves</h2>
+                            </div>
+                            <div class="swiper testimonialsSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-start justify-content-center">
+                                            <div class="d-flex flex-row align-items-center justify-content-start mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                            </div>
+                                            <p class="font-sec color-para fs-5 fw-semibold mb-5">"Our home has never felt this comfortable. The technicians were professional, on time, and explained everything clearly. From consultation to installation, the whole process was smooth and stress-free. Highly recommend for anyone needing reliable and efficient air conditioning!"</p>
+                                            <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                                                <img src="assets/content/img/testimonialSectionImage.webp" alt="" class="w-100 h-100 rounded-3">
+                                                <div class="d-flex flex-column align-items-start justify-content-center">
+                                                    <h3 class="font-pri text-white fs-5 fw-semibold">David Miller</h3>
+                                                    <p class="mb-0 font-sec color-para fs-5 fw-medium">Homeowner</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-start justify-content-center">
+                                            <div class="d-flex flex-row align-items-center justify-content-start mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                            </div>
+                                            <p class="font-sec color-para fs-5 fw-semibold mb-5">"Our home has never felt this comfortable. The technicians were professional, on time, and explained everything clearly. From consultation to installation, the whole process was smooth and stress-free. Highly recommend for anyone needing reliable and efficient air conditioning!"</p>
+                                            <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                                                <img src="assets/content/img/testimonialSectionImage.webp" alt="" class="w-100 h-100 rounded-3">
+                                                <div class="d-flex flex-column align-items-start justify-content-center">
+                                                    <h3 class="font-pri text-white fs-5 fw-semibold">David Miller</h3>
+                                                    <p class="mb-0 font-sec color-para fs-5 fw-medium">Homeowner</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-start justify-content-center">
+                                            <div class="d-flex flex-row align-items-center justify-content-start mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#cc3b02" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                            </div>
+                                            <p class="font-sec color-para fs-5 fw-semibold mb-5">"Our home has never felt this comfortable. The technicians were professional, on time, and explained everything clearly. From consultation to installation, the whole process was smooth and stress-free. Highly recommend for anyone needing reliable and efficient air conditioning!"</p>
+                                            <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                                                <img src="assets/content/img/testimonialSectionImage.webp" alt="" class="w-100 h-100 rounded-3">
+                                                <div class="d-flex flex-column align-items-start justify-content-center">
+                                                    <h3 class="font-pri text-white fs-5 fw-semibold">David Miller</h3>
+                                                    <p class="mb-0 font-sec color-para fs-5 fw-medium">Homeowner</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev d-none d-lg-flex"></div>
+                                <div class="swiper-button-next d-none d-lg-flex"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secSix">
+            <div class="container-fluid py-5 bg-white">
+                <div class="container-lg wrapper py-4">
+                    <div class="row align-items-center gy-5">
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex flex-column align-items-center align-items-lg-start justify-content-center">
+                                <div class="d-flex flex-row align-items-center justify-content-center gap-2 mb-2"><span class="badgeCircle"></span><span class="font-pri text-black fw-semibold fs-6 text-uppercase">FAQ</span></div>
+                                <h2 class="mb-4 mb-lg-5 font-pri text-black display-5 fw-bold text-capitalize text-center text-lg-start">Clear answers for all your AC questions</h2>
+                                <div class="d-flex flex-column align-items-center justify-content-center bg-black rounded-4 p-4" style="width: fit-content !important">
+                                    <div class="d-flex flex-row align-items-center justify-content-center gap-3 border-bottom border-dark pb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none"><path d="M35 13.2251V23.0001C35 23.8209 34.8383 24.6336 34.5242 25.3919C34.2102 26.1502 33.7498 26.8391 33.1694 27.4195C32.5891 27.9999 31.9001 28.4603 31.1418 28.7743C30.3835 29.0884 29.5708 29.2501 28.75 29.2501H12.5V30.5001C12.503 31.4937 12.899 32.4459 13.6016 33.1485C14.3042 33.8511 15.2564 34.2471 16.25 34.2501H30.6625C30.858 34.2526 31.0504 34.2996 31.225 34.3876L35.6875 36.6126C35.8621 36.7005 36.0545 36.7476 36.25 36.7501C36.4839 36.7499 36.7132 36.685 36.9125 36.5626C37.0926 36.45 37.2411 36.2934 37.3439 36.1075C37.4467 35.9216 37.5004 35.7125 37.5 35.5001V16.7501C37.4978 15.9764 37.2564 15.2223 36.8088 14.5913C36.3613 13.9602 35.7294 13.483 35 13.2251Z" fill="#cc3b02"></path><path d="M32.5 23V8C32.5 7.00544 32.1049 6.05161 31.4017 5.34835C30.6984 4.64509 29.7446 4.25 28.75 4.25H6.25C5.25544 4.25 4.30161 4.64509 3.59835 5.34835C2.89509 6.05161 2.5 7.00544 2.5 8V30.5C2.49991 30.7355 2.56637 30.9663 2.69173 31.1657C2.81708 31.3651 2.99623 31.5251 3.20852 31.6271C3.42082 31.7291 3.65762 31.7691 3.89164 31.7424C4.12566 31.7157 4.34738 31.6235 4.53125 31.4762L10.0962 27.0238C10.3173 26.8469 10.5919 26.7504 10.875 26.75H28.75C29.7446 26.75 30.6984 26.3549 31.4017 25.6517C32.1049 24.9484 32.5 23.9946 32.5 23ZM18.65 20.975C18.5939 21.1301 18.5043 21.271 18.3876 21.3876C18.271 21.5043 18.1301 21.5939 17.975 21.65C17.8253 21.7159 17.6636 21.7499 17.5 21.7499C17.3364 21.7499 17.1747 21.7159 17.025 21.65C16.8699 21.5939 16.729 21.5043 16.6124 21.3876C16.4957 21.271 16.4061 21.1301 16.35 20.975C16.2859 20.8247 16.252 20.6633 16.25 20.5C16.2549 20.1691 16.3843 19.8522 16.6125 19.6125C16.7341 19.5022 16.8736 19.4134 17.025 19.35C17.1741 19.282 17.3361 19.2468 17.5 19.2468C17.6639 19.2468 17.8259 19.282 17.975 19.35C18.1264 19.4134 18.2659 19.5022 18.3875 19.6125C18.6177 19.8509 18.7475 20.1686 18.75 20.5C18.748 20.6633 18.7141 20.8247 18.65 20.975ZM18.8888 16.6C18.8207 16.6408 18.7651 16.6994 18.7279 16.7694C18.6907 16.8394 18.6733 16.9183 18.6775 16.9975C18.6775 17.329 18.5458 17.647 18.3114 17.8814C18.077 18.1158 17.759 18.2475 17.4275 18.2475C17.096 18.2475 16.778 18.1158 16.5436 17.8814C16.3092 17.647 16.1775 17.329 16.1775 16.9975C16.169 16.4239 16.3307 15.8607 16.6422 15.379C16.9537 14.8973 17.4009 14.5188 17.9275 14.2913C18.1904 14.1822 18.4111 13.9914 18.557 13.747C18.7028 13.5027 18.7661 13.2178 18.7373 12.9347C18.7086 12.6516 18.5893 12.3853 18.3973 12.1753C18.2053 11.9652 17.9507 11.8227 17.6713 11.7688C17.3598 11.712 17.0383 11.7673 16.7637 11.9249C16.4891 12.0826 16.2792 12.3324 16.1713 12.63C16.058 12.9396 15.827 13.1918 15.5286 13.3319C15.2302 13.472 14.8885 13.4885 14.578 13.3779C14.2675 13.2673 14.0132 13.0385 13.8705 12.7414C13.7279 12.4442 13.7084 12.1027 13.8163 11.7913C14.0288 11.1903 14.3883 10.6521 14.8619 10.2255C15.3355 9.79885 15.9083 9.4974 16.5281 9.34854C17.1479 9.19967 17.795 9.20812 18.4107 9.3731C19.0264 9.53808 19.5911 9.85437 20.0535 10.2932C20.5158 10.732 20.8611 11.2795 21.0579 11.8857C21.2548 12.492 21.2969 13.1378 21.1806 13.7646C21.0642 14.3913 20.793 14.979 20.3917 15.4742C19.9903 15.9694 19.4715 16.3564 18.8825 16.6H18.8888Z" fill="#cc3b02"></path></svg>
+                                        <h3 class="mb-0 font-pri fw-bold text-white fs-5">Answers to Your Recovery Questions</h3>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center justify-content-between gap-3 pt-3 w-100">
+                                        <a href="javascript:void(0)" class="hoverPrimary text-decoration-none text-white font-pri fw-normal fs-6 d-flex flex-row align-items-center justify-content-start gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#cc3b02" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path></svg>
+                                            +01-123-254-896
+                                        </a>
+                                        <a href="javascript:void(0)" class="hoverPrimary text-decoration-none text-white font-pri fw-normal fs-6 d-flex flex-row align-items-center justify-content-start gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#cc3b02" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path></svg>
+                                            info@domainname.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="accordion faqAccordion" id="faqAccordion">
+
+                                <div class="accordion-item faqItem">
+                                    <h3 class="accordion-header" id="faqHeadingOne">
+                                        <button class="accordion-button faqButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                                            <span class="faqQuestion font-pri">How often should I service my AC?</span>
+                                            <span class="faqIcon" aria-hidden="true">
+                                                <svg class="faqIconPlus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+                                                <svg class="faqIconMinus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"></path></svg>
+                                            </span>
+                                        </button>
+                                    </h3>
+                                    <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body faqAnswer font-sec">
+                                            It depends on your space, usage, and energy needs. Split ACs are great for single rooms,
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item faqItem">
+                                    <h3 class="accordion-header" id="faqHeadingTwo">
+                                        <button class="accordion-button faqButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                            <span class="faqQuestion font-pri">What type of AC system is best for my home?</span>
+                                            <span class="faqIcon" aria-hidden="true">
+                                                <svg class="faqIconPlus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+                                                <svg class="faqIconMinus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"></path></svg>
+                                            </span>
+                                        </button>
+                                    </h3>
+                                    <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body faqAnswer font-sec">
+                                            It depends on your space, usage, and energy needs. Split ACs are great for single rooms,
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item faqItem">
+                                    <h3 class="accordion-header" id="faqHeadingThree">
+                                        <button class="accordion-button faqButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                            <span class="faqQuestion font-pri">Do you offer emergency repair services?</span>
+                                            <span class="faqIcon" aria-hidden="true">
+                                                <svg class="faqIconPlus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+                                                <svg class="faqIconMinus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"></path></svg>
+                                            </span>
+                                        </button>
+                                    </h3>
+                                    <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body faqAnswer font-sec">
+                                            It depends on your space, usage, and energy needs. Split ACs are great for single rooms,
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item faqItem">
+                                    <h3 class="accordion-header" id="faqHeadingFour">
+                                        <button class="accordion-button faqButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                            <span class="faqQuestion font-pri">Air Conditioning Website Summary</span>
+                                            <span class="faqIcon" aria-hidden="true">
+                                                <svg class="faqIconPlus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+                                                <svg class="faqIconMinus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="#000"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"></path></svg>
+                                            </span>
+                                        </button>
+                                    </h3>
+                                    <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body faqAnswer font-sec">
+                                            It depends on your space, usage, and energy needs. Split ACs are great for single rooms,
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-black pt-5 pb-3">
+            <div class="container-lg wrapper">
+                <div class="row gy-5 justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <div class="d-flex flex-column align-items-start justify-content-center">
+                            <div class="d-flex flex-row align-items-center justify-content-start gap-3 mb-4">
+                                <img src="assets/content/logo/brandmark.svg" alt="" height="75px" width="auto">
+                                <h2 class="mb-0 font-pri fw-bold fs-4 text-white text-uppercase">Sunshine Ducts</h2>
+                            </div>
+                            <p class="mb-4 font-sec text-white fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <div class="d-flex flex-row align-items-center justify-content-start gap-2">
+                                <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#cc3b02" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg></a>
+                                <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#cc3b02" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></a>
+                                <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#cc3b02" viewBox="0 0 256 256"><path d="M224,112c0,22.57-7.9,43.2-22.23,58.11C188.39,184,170.25,192,152,192c-17.88,0-29.82-5.86-37.43-12l-10.78,45.82A8,8,0,0,1,96,232a8.24,8.24,0,0,1-1.84-.21,8,8,0,0,1-6-9.62l32-136a8,8,0,0,1,15.58,3.66l-16.9,71.8C122,166,131.3,176,152,176c27.53,0,56-23.94,56-64A72,72,0,1,0,73.63,148a8,8,0,0,1-13.85,8A88,88,0,1,1,224,112Z"></path></svg></a>
+                                <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#cc3b02" viewBox="0 0 256 256"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="row align-items-start gy-5">
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex flex-column align-items-start justify-content-center">
+                                    <h3 class="mb-4 fs-5 font-pri text-white fw-bold">Quick Links</h3>
+                                    <div class="d-flex flex-column align-items-start justify-content-center gap-3">
+                                        <a href="index.html" class="fs-6 text-decoration-none text-white opacity-75 font-sec footerLinks">Home</a>
+                                        <a href="about.html" class="fs-6 text-decoration-none text-white opacity-75 font-sec footerLinks">About</a>
+                                        <a href="javascript:void(0)" class="fs-6 text-decoration-none text-white opacity-75 font-sec footerLinks">Services</a>
+                                        <a href="contact.html" class="fs-6 text-decoration-none text-white opacity-75 font-sec footerLinks">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex flex-column align-items-start justify-content-center">
+                                    <h3 class="mb-4 fs-5 font-pri text-white fw-bold">Contact</h3>
+                                    <div class="d-flex flex-column align-items-start justify-content-center gap-3">
+                                        <a href="javascript:void(0)" class="fs-6 text-decoration-none text-white opacity-75 font-sec footerLinks">+123 456 78900</a>
+                                        <a href="javascript:void(0)" class="fs-6 text-decoration-none text-white opacity-75 font-sec footerLinks">info@domainame.com</a>
+                                        <a href="javascript:void(0)" class="fs-6 text-decoration-none text-white opacity-75 font-sec footerLinks">2972 Westheimer Rd, Santa Ana, Illinois, UK</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-lg wrapper p-0">
+                <p class="border-top border-white border-1 pt-3 mt-3 mb-0 font-sec text-white fw-medium text-center">Copyright © 2026 <a href="javascript:void(0)" class="text-decoration-none text-white footerLinks">Sunshine Ducts</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Lenis JS -->
+    <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script> 
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Website JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

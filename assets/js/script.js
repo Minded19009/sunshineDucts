@@ -123,3 +123,48 @@ aboutUsBadge.forEach((badge) => {
         })
     } )
 })
+
+// Contact Form Submission:
+const contactForm = document.querySelector('.contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const btnText   = submitBtn.querySelector('.btnText');
+        const originalText = btnText.innerText;
+
+        submitBtn.disabled = true;
+        btnText.innerText = 'Sending...';
+
+        try {
+            const formData = new FormData(contactForm);
+
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                btnText.innerText = 'Message Sent!';
+                contactForm.reset();
+
+                setTimeout(() => {
+                    btnText.innerText = originalText;
+                    submitBtn.disabled = false;
+                }, 3000);
+            } else {
+                alert(result.message || 'Something went wrong. Please try again.');
+                btnText.innerText = originalText;
+                submitBtn.disabled = false;
+            }
+        } catch (error) {
+            alert('Unable to send your message right now. Please try again or call us directly.');
+            btnText.innerText = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+}

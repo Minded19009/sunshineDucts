@@ -116,7 +116,7 @@ aboutUsBadge.forEach((badge) => {
                 box.classList.add('d-flex');
             }
 
-            if (badgeText === 'our value' && box.id === 'ourValueBox') {
+            if (badgeText === 'our values' && box.id === 'ourValueBox') {
                 box.classList.remove('d-none');
                 box.classList.add('d-flex');
             }
